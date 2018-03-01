@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>groupId</groupId>
+    <artifactId>Pogodynka</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+        <dependencies>
+            <dependency>
+                <groupId>com.sun.javafx.rt15</groupId>
+                <artifactId>javafx-rt15</artifactId>
+                <version>1.0</version>
+                <!--<scope>system</scope>-->
+                <!--<systemPath>${javafx_home}/lib/desktop/rt15.jar</systemPath>-->
+            </dependency>
+            <dependency>
+                <groupId>com.sun.javafx.gui</groupId>
+                <artifactId>javafx-gui</artifactId>
+                <version>1.0</version>
+                <!--<scope>system</scope>-->
+                <!--<systemPath>${javafx_home}/lib/desktop/javafxgui.jar</systemPath>-->
+            </dependency>
+            <dependency>
+                <groupId>com.sun.javafx.rt</groupId>
+                <artifactId>javafx-rt</artifactId>
+                <version>1.0</version>
+                <!--<scope>system</scope>-->
+                <!--<systemPath>${javafx_home}/lib/shared/javafxrt.jar</systemPath>-->
+            </dependency>
+            <dependency>
+                <groupId>com.sun.javafx.eula</groupId>
+                <artifactId>javafx-eula</artifactId>
+                <version>1.0</version>
+                <!--<scope>system</scope>-->
+                <!--<systemPath>${javafx_home}/lib/desktop/eula.jar</systemPath>-->
+            </dependency>
+            <dependency>
+                <groupId>com.sun.javafx.scenario</groupId>
+                <artifactId>javafx-scenario</artifactId>
+                <version>1.0</version>
+                <!--<scope>system</scope>-->
+                <!--<systemPath>${javafx_home}/lib/desktop/Scenario.jar</systemPath>-->
+            </dependency>
+            <dependency>
+                <groupId>com.sun.javafx.swing</groupId>
+                <artifactId>javafx-swing</artifactId>
+                <version>1.0</version>
+                <!--<scope>system</scope>-->
+                <!--<systemPath>${javafx_home}/lib/desktop/javafx-swing.jar</systemPath>-->
+            </dependency>
+            <dependency>
+                <groupId>com.sun.javafx.jmc</groupId>
+                <artifactId>javafx-jmc</artifactId>
+                <version>1.0</version>
+                <!--<scope>system</scope>-->
+                <!--<systemPath>${javafx_home}/lib/desktop/jmc.jar</systemPath>-->
+            </dependency>
+            <dependency>
+                <groupId>com.sun.javafx.websvc</groupId>
+                <artifactId>javafx-websvc</artifactId>
+                <version>1.0</version>
+                <!--<scope>system</scope>-->
+                <!--<systemPath>${javafx_home}/lib/desktop/websvc.jar</systemPath>-->
+            </dependency>
+            <dependency>
+                <groupId>com.sun.javafx.scriptapi</groupId>
+                <artifactId>javafx-scriptapi</artifactId>
+                <version>1.0</version>
+                <!--<scope>system</scope>-->
+                <!--<systemPath>${javafx_home}/lib/desktop/script-api.jar</systemPath>-->
+            </dependency>
+            <!-- The javafx dependencies are taken from the profiles/desktop.properties file-->
+    </dependencies>
+
+    <build>
+            <resources>
+                <resource>
+                    <directory>${basedir}/src/main/</directory>
+                    <includes>
+                        <include>**/**</include>
+                    </includes>
+                </resource>
+            </resources>
+    </build>
+
+</project>
