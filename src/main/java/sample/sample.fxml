@@ -4,18 +4,16 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.GridPane?>
-<?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.CheckBox?>
 <VBox xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller" alignment="BASELINE_CENTER">
     <padding><Insets top="25" right="25" bottom="25" left="25"/></padding>
 
     <GridPane hgap="20" vgap="10">
-        <ChoiceBox prefHeight="0.0" prefWidth="107.0" GridPane.rowIndex="0" GridPane.columnIndex="14"/>
-        <Button text="+" GridPane.rowIndex="0" GridPane.columnIndex="15"/>
+        <ChoiceBox fx:id="cityChoiceBox" prefHeight="0.0" prefWidth="107.0" GridPane.rowIndex="0" GridPane.columnIndex="14"/>
+        <Button fx:id="addButton" text="+" GridPane.rowIndex="0" GridPane.columnIndex="15"/>
         <Label text="Poniedziałek 21.01"  GridPane.columnIndex="0" />
     </GridPane>
 
