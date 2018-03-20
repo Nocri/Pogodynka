@@ -9,7 +9,6 @@ import retrofit2.converter.gson.GsonConverterFactory;
  */
 public class ServiceGenerator {
 
-    // TODO MK 17.02.2018 - change BASE_URL
     private static final String BASE_URL = "http://api.wunderground.com/api/f3aa30e893ddb114/forecast10day/q/";
 
     private static Retrofit.Builder builder =
